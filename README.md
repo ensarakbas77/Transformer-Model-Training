@@ -19,3 +19,14 @@
 *Bu modelimiz beş resimden dördünü doğru bilmiştir (1.görsel hatalı). Çıkan sonuç ise şu şekildedir:* </br> </br>
 ![image](https://github.com/user-attachments/assets/0c064e3f-0fd6-4ec9-a792-9ce9f1b86e8a) </br> </br> 
 # Swin </br>
+![image](https://github.com/user-attachments/assets/18731854-1a77-46ef-b1bd-5567dd934f30) </br>
+*İlk epoch'ta doğruluk %20.27 iken, ilerleyen epoch'larda modelin öğrenme başarısı artarak 14. epoch'ta doğruluk %71.11 seviyesine ulaşmıştır. Ancak, validasyon doğruluk değerlerinin (val_accuracy) eğitim doğruluğuna oranla düşük olduğu ve zamanla dalgalanma gösterdiği fark edilmektedir.* </br> </br>
+## Modeli Test Etme </br>
+![image](https://github.com/user-attachments/assets/5be3a16c-4339-4a3f-a966-0e9b3d3e1147) </br> 
+*ViT model testinde kullandığımız görüntü verileri ile modeli test ettiğimizde karşımıza çıkan sonuç bu şekildedir. Model beş resim üzerinden iki tanesini doğru tahmin etmiştir.* </br> </br>
+# BEiT </br>
+![image](https://github.com/user-attachments/assets/494e054c-042b-4a61-a467-071e59b891c7) </br>
+*14. epoch sonunda doğrulama doğruluğu %33.90'a ulaşmıştır. Eğitim kaybı sürekli düşüş göstermiştir; ancak doğrulama kaybında tam bir iyileşme gözlenmemiştir, bu da modelin doğrulama kümesinde genelleme yapma yeteneğinin sınırlı olduğunu gösterir. Toplam eğitim süresi 1788.80 saniyedir.* </br> </br>
+## Modeli Test Etme </br>
+![image](https://github.com/user-attachments/assets/8b50fa20-5659-48d8-990e-d218bc7af26f) </br>
+*ViT model testinde de kullandığımız görüntüler ile BeiT modelini test ettik. Beş görüntüden ikisini doğru bildi. Sonuçlar modelin sınıfları ayırt etme zorluk çektiğini ve daha fazla optimizasyon gerektiğini gösteriyor.*
